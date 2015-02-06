@@ -9,4 +9,8 @@ Rails.application.routes.draw do
   resources :users
   resources :subjects
   resources :tasks
+  namespace :admin do
+    #get 'signup' => 'users#new'
+    resources :users
+  end
 end
