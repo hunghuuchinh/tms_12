@@ -18,7 +18,10 @@
       <%= f.label :password_confirmation, 'Confirmation' %>
       <%= f.password_field :password_confirmation, class: 'form-control' %>
 
-      <%= f.submit 'Create my account', class: 'btn btn-primary' %>
+      <%= f.label :admin, 'set user is admin' %>
+      <%= f.check_box :admin, class: 'check_box' %>
+
+      <%= f.submit 'Create new account', class: 'btn btn-primary' %>
     <% end %>
   </div>
 </div>
